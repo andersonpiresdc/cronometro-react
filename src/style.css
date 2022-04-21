@@ -39,3 +39,7 @@
    columns: #000;
    transform: all 0.60s;   
 }
+
+a{
+   text-decoration: none;
+}

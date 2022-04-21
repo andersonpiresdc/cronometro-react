@@ -49,11 +49,15 @@ class App extends Component{
    render(){
       return(
          <div className="container">
-            <img src={require('./assets/cronometro.png')} className="img"/>
-            <a className="timer">{this.state.numero.toFixed(1)}</a>
+            <img src={require('./assets/cronometro.png')} className="img" alt=""/>
+            <a href="#top" className="timer">{this.state.numero.toFixed(1)}</a>
+            {/* <div className="areaBtn">
+               <a href="#top" className="botao" onClick={this.iniciar}>{this.state.txtBotaoIniciar}</a>
+               <a href="#top" className="botao" onClick={this.parar}>Parar</a>
+            </div> */}
             <div className="areaBtn">
-               <a className="botao" onClick={this.iniciar}>{this.state.txtBotaoIniciar}</a>
-               <a className="botao" onClick={this.parar}>Parar</a>
+               <button className="botao" onClick={this.iniciar}>{this.state.txtBotaoIniciar}</button>
+               <button className="botao" onClick={this.parar}>Parar</button>
             </div>
          </div>
       )
